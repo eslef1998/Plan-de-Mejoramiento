@@ -1,7 +1,5 @@
-
-
-
-.grid{
+/* Contenedor principal con grid de 10x10 */
+.grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -9,49 +7,49 @@
     height: 100vh;
 }
 
-
-
-img{
+/* Imágenes con ancho completo */
+img {
     width: 100%;
 }
 
-.box-one{
+/* Caja uno, posición y estilo visual */
+.box-one {
     padding-bottom: px;
     grid-column: 2/4;
-    background-color:hsl(31, 66%, 93%);
+    background-color: hsl(31, 66%, 93%);
     border-radius: 4%;
     grid-row: 1/2;
     height: 125%;
-
-
 }
-.box-one h2{
 
+/* Título dentro de la caja uno */
+.box-one h2 {
     font-size: 45px;
     font-family: Arial, sans-serif;
-    transform: translate(40px,0px)
-
+    transform: translate(40px, 0px);
 }
 
-.box-one span{
+/* Texto resaltado dentro de la caja uno */
+.box-one span {
     color: blueviolet;
 }
 
-
-
-.box-one img{
+/* Imagen dentro de la caja uno */
+.box-one img {
     width: 50%;
     transform: translate(50%, 30%);
 }
 
-.box-two{
+/* Caja dos, fondo y posición */
+.box-two {
     grid-column: 4/8;
     background-color: rgb(81, 7, 150);
     border-radius: 4%;
     grid-row: 1/1;
 }
 
-.box-two h1{
+/* Título en caja dos */
+.box-two h1 {
     font-size: 70px;
     color: white;
     font-family: Arial;
@@ -59,166 +57,325 @@ img{
     text-align: center;
 }
 
-
-.box-two span{
-
-color:darkgoldenrod;
-
-
+/* Texto destacado dentro de caja dos */
+.box-two span {
+    color: darkgoldenrod;
 }
-.box-two img{
-    transform: translate(80%,-100%);
 
+/* Imagen dentro de caja dos */
+.box-two img {
+    transform: translate(80%, -100%);
     width: 40%;
 }
-.box-two p{
+
+/* Párrafo dentro de caja dos */
+.box-two p {
     font-size: 25px;
     text-align: center;
     transform: translate(3%, 200%);
-
     color: white;
 }
 
-.box-three{
-    grid-column:8/10;
+/* Caja tres, posición y estilo */
+.box-three {
+    grid-column: 8/10;
     background-color: hsl(254, 88%, 90%);
     grid-row: 1/3;
     border-radius: 4%;
     overflow: hidden;
     position: relative;
 }
-.box-three h2{
+
+/* Título en caja tres */
+.box-three h2 {
     text-align: center;
     font-size: 50px;
     font-family: Arial;
 }
-.box-three p{
+
+/* Párrafo en caja tres */
+.box-three p {
     font-family: Arial;
-    transform: translate(5px,0px);
+    transform: translate(5px, 0px);
     font-size: 30px;
     text-align: center;
 }
 
-.box-three img{
-    transform: translate(75px,0);
+/* Imagen en caja tres */
+.box-three img {
+    transform: translate(75px, 0);
     width: 110%;
-    object-fit:cover ;
-
-    clip-path:(40% at center);
+    object-fit: cover;
+    clip-path: (40% at center);
 }
 
-.box-four{
-
-grid-column: 2/4;
-grid-row: 3/5;
-background-color: rgb(214, 184, 13);
-border-radius: 4%;
-margin-top: -200px;
+/* Caja cuatro, ubicación y color de fondo */
+.box-four {
+    grid-column: 2/4;
+    grid-row: 3/5;
+    background-color: rgb(214, 184, 13);
+    border-radius: 4%;
+    margin-top: -200px;
 }
-.box-four img{
+
+/* Imagen en caja cuatro */
+.box-four img {
     width: 75%;
     transform: translate(50px, -60px);
 }
-.box-four h2{
+
+/* Título en caja cuatro */
+.box-four h2 {
     font-size: 50px;
     font-family: Arial, sans-serif;
     transform: translate(20px, -30px);
 }
 
-.box-five{
-
+/* Caja cinco, ubicación y estilo */
+.box-five {
     grid-column: 4/6;
     background-color: rgb(212, 210, 210);
     grid-row: 2/3;
     border-radius: 4%;
 }
 
-.box-five h2{
+/* Título en caja cinco */
+.box-five h2 {
     font-size: 40px;
     font-family: Arial, sans-serif;
     transform: translate(25px, 8px);
 }
-.box-five img{
+
+/* Imagen en caja cinco */
+.box-five img {
     width: 100%;
     transform: translate(20px, 20px);
 }
 
-
-.box-five p{
+/* Párrafo en caja cinco */
+.box-five p {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     transform: translate(20px, 20px);
 }
 
-.alternative{
+/* Caja alternativa, con misma estructura que caja cinco */
+.alternative {
     grid-column: 4/6;
     grid-row: 3/4;
     background-color: rgb(212, 210, 210);
     border-radius: 4%;
 }
 
-.alternative p{
+/* Párrafo en alternativa */
+.alternative p {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     transform: translate(20px, 20px);
 }
 
-.alternative span{
+/* Texto grande en alternativa */
+.alternative span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80px;
     transform: translate(20px, 20px);
 }
-.alternative img{
+
+/* Imagen en alternativa */
+.alternative img {
     width: 60%;
     transform: translate(50px, 0px);
 }
 
-.box-six{
+/* Caja seis, estilo visual y posición */
+.box-six {
     background-color: rgb(214, 184, 13);
-
     grid-column: 6/8;
     overflow: hidden;
     position: relative;
     border-radius: 4%;
 }
 
-.box-six img{
+/* Imagen en caja seis */
+.box-six img {
     width: 90%;
     transform: translate(15px, -30px);
-
-}
-.box-six h2{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 230%;
-align-items: center;
-transform: translate(40px, -25px);
 }
 
-.box-eight{
-grid-column: 6/10;
-grid-row: 3/3;
-background-color: blueviolet;
-border-radius: 4%;
-overflow: hidden;
-position: relative;
+/* Título en caja seis */
+.box-six h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 230%;
+    align-items: center;
+    transform: translate(40px, -25px);
 }
-.box-eight p{
+
+/* Caja ocho, fondo y diseño */
+.box-eight {
+    grid-column: 6/10;
+    grid-row: 3/3;
+    background-color: blueviolet;
+    border-radius: 4%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Párrafo en caja ocho */
+.box-eight p {
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     transform: translate(300px, 20px);
     color: white;
 }
-.box-eight img{
+
+/* Imagen en caja ocho */
+.box-eight img {
     width: 35%;
     transform: translate(40px, -150px);
     text-align: center;
 }
 
+/* Media Query para pantallas entre 600px y 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 16px;
+    padding: 16px;
+    height: auto;
+  }
 
+  .grid section {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    height: auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
 
+  .grid img {
+    width: 100%;
+    height: auto;
+    transform: none !important;
+  }
 
+  .grid h1,
+  .grid h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    transform: none !important;
+  }
 
+  .grid p {
+    font-size: 1rem;
+    text-align: center;
+    transform: none !important;
+  }
 
+  .box-eight p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
+  .alternative span {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 
+/* Media query para móviles (entre 375px y 600px) */
+@media (min-width: 375px) and (max-width: 600px) {
+  /* Cambia el layout a una sola columna */
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    height: auto;
+  }
+
+  /* Estilos generales para las secciones */
+  .grid section {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 16px;
+  }
+
+  /* Ajustes visuales para imágenes y texto */
+  .grid img {
+    width: 100%;
+    height: auto;
+    transform: none !important;
+  }
+
+  .grid h1,
+  .grid h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    transform: none !important;
+    margin-bottom: 8px;
+  }
+
+  .grid p {
+    font-size: 1rem;
+    text-align: center;
+    transform: none !important;
+  }
+
+  .box-one {
+    background-color: hsl(31, 66%, 93%);
+  }
+
+  .box-two {
+    background-color: rgb(81, 7, 150);
+    color: white;
+  }
+
+  .box-three {
+    background-color: hsl(254, 88%, 90%);
+  }
+
+  .box-four {
+    background-color: rgb(214, 184, 13);
+  }
+
+  .box-five {
+    background-color: rgb(212, 210, 210);
+  }
+
+  .alternative {
+    background-color: rgb(212, 210, 210);
+  }
+
+  .box-six {
+    background-color: rgb(214, 184, 13);
+  }
+
+  .box-eight {
+    background-color: blueviolet;
+    color: white;
+  }
+
+  .box-eight p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .alternative span {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+  .box-four img{
+    width: 70%;
+    height: 70%;
+   
+  }
+}
 
